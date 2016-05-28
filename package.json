@@ -24,7 +24,7 @@
     "babel-register": "^6.9.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.2.3",
-    "espower-babel": "^4.0.3",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "power-assert": "^1.4.1"
   }
 }
