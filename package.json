@@ -1,0 +1,24 @@
+{
+  "name": "node-package-starter",
+  "version": "0.0.1",
+  "description": "node-package-starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:espower-babel/guess --timeout 6000000 test/**/*.js",
+    "test:abnormal": "mocha --compilers js:espower-babel/guess --timeout 60000 test/abnormal.js",
+    "lint": "eslint . --ext .js -c .eslintrc || true"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eiurur/node-package-starter.git"
+  },
+  "author": "eiurur",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.2.3",
+    "espower-babel": "^4.0.3",
+    "mocha": "^2.4.5"
+  }
+}
