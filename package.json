@@ -2,11 +2,14 @@
   "name": "node-package-starter",
   "version": "0.0.1",
   "description": "node-package-starter",
-  "main": "index.js",
+  "main": "./build/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register --timeout 6000000 test/**/*.js",
-    "test:abnormal": "mocha --compilers js:babel-register --timeout 60000 test/abnormal.js",
-    "lint": "eslint . --ext .js -c .eslintrc || true"
+    "build": "babel src --out-dir build",
+    "watch": "babel src --out-dir build --watch",
+    "test": "mocha",
+    "lint": "eslint . --ext .js -c .eslintrc || true",
+    "prepublish": "rm -rf build && npm run build",
+    "preupdate": "rm -rf build && npm run build"
   },
   "keywords": [
     "starter",

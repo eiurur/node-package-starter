@@ -10,7 +10,7 @@ description ...
 
 # Installation
 
-...
+    npm i <package_name>
 
 # Usage
 
