@@ -13,3 +13,10 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
+deploy:
+  provider: npm
+  email: "eiurur789@gmail.com"
+  api_key: $NPM_API_KEY
+  skip_cleanup: true # `run-script build`で生成したES5のコードを消さないようにする
+  on:
+    tags: true
