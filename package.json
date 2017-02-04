@@ -29,7 +29,7 @@
     "eslint": "^3.8.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^3.0.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.6.0",
     "mocha": "^3.0.0",
     "power-assert": "^1.4.1"
